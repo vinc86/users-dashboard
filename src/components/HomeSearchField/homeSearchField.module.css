@@ -1,0 +1,60 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--flex-gap-sm);
+  width: 100vw;
+  max-width: 680px;
+  margin: auto;
+  padding: var(--padding-sm);
+}
+
+.inputLabel {
+  font-size: var(--font-size-md);
+  color: var(--text-color-secondary);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: var(--flex-gap-md);
+  background-color: var(--background-white);
+  border-radius: var(--border-radius-xl);
+  justify-content: space-between;
+}
+
+.buttonMobile {
+  border-radius: 50%;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  place-content: center;
+}
+
+.buttonDesktop {
+  border-radius: var(--border-radius-lg);
+  display: none;
+  width: 20%;
+  height: 80px;
+  place-content: center;
+  letter-spacing: 2px;
+  font-size: var(--font-size-lg);
+  padding: var(--padding-lg) var(--padding-xl);
+}
+
+@media screen and (min-width: 768px) {
+  .inputWrapper {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: initial;
+  }
+
+  .buttonMobile {
+    display: none;
+  }
+
+  .buttonDesktop {
+    display: grid;
+  }
+}

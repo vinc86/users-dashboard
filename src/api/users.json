@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "name": "George Harris",
+    "role": "admin",
+    "jobTitle": "Software Engineer",
+    "team": "Security",
+    "email": "george.harris@example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": "2",
+    "name": "Arianna Russo",
+    "role": "editor",
+    "jobTitle": "Product Designer",
+    "team": "Website",
+    "email": "arianna.russo@example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": "3",
+    "name": "Marco Esposito",
+    "role": "viewer",
+    "jobTitle": "Software Engineer",
+    "team": "Finance",
+    "email": "marco.esposito@example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": "4",
+    "name": "Sarah Williams",
+    "role": "guest",
+    "jobTitle": "Product Designer",
+    "team": "Security",
+    "email": "sarah.williams@example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": "5",
+    "name": "Emma Clark",
+    "role": "guest",
+    "jobTitle": "Product Manager",
+    "team": "Marketing",
+    "email": "emma.clark@example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": "6",
+    "name": "Victor Barnes",
+    "role": "viewer",
+    "jobTitle": "Product Manager",
+    "team": "Finance",
+    "email": "victor.barnes@example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": "7",
+    "name": "Serena Parisi",
+    "role": "guest",
+    "jobTitle": "Product Designer",
+    "team": "Marketing",
+    "email": "serena.parisi@example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]

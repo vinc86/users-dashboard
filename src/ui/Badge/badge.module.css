@@ -1,0 +1,27 @@
+.badge {
+  text-transform: uppercase;
+  color: var(--text-color-white);
+  font-size: var(--font-size-md);
+  letter-spacing: var(--letter-spacing-sm);
+  padding: var(--padding-xs) var(--padding-md);
+  border-radius: var(--border-radius-sm);
+  width: fit-content;
+}
+
+.admin {
+  background-color: var(--badge-color-navy);
+}
+.editor {
+  background-color: var(--badge-color-teal);
+}
+.viewer {
+  background-color: var(--badge-color-steel-blue);
+}
+.guest {
+  background-color: var(--badge-color-magenta);
+}
+.owner,
+.inactive {
+  background-color: var(--badge-color-white);
+  color: var(--text-color-primary);
+}

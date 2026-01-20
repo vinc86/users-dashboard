@@ -1,0 +1,88 @@
+.modal {
+  background-color: var(--background-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--padding-lg);
+  max-width: 800px;
+  width: 95%;
+  max-height: 90vh;
+  margin: auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: none;
+}
+
+.modal::backdrop {
+  background: var(--background-subdued-opaque);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--text-color-primary);
+  margin: 0;
+}
+
+.jobTitle {
+  font-size: var(--font-size-lg);
+  letter-spacing: 1px;
+  color: var(--text-color-secondary);
+  margin: 0;
+}
+
+.detailSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Reset dl/dd default margins */
+.detailSection dd {
+  margin: 0;
+}
+
+.detailLabel {
+  font-size: var(--font-size-md);
+  color: var(--text-color-secondary);
+  font-weight: 400;
+}
+
+.detailValue {
+  font-size: var(--font-size-md);
+  color: var(--text-color-primary);
+}
+
+.detailLink {
+  font-size: var(--font-size-md);
+  color: var(--color-main);
+  text-decoration: underline;
+}
+
+.detailDescription {
+  font-size: var(--font-size-md);
+  color: var(--text-color-primary);
+  line-height: var(--line-height-md);
+  margin: 0;
+}
+
+.modalButton {
+  width: initial;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    height: 450px;
+  }
+  .modalButton {
+    width: fit-content;
+    margin-top: auto;
+    align-self: flex-end;
+  }
+}

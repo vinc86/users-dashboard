@@ -1,0 +1,49 @@
+.filterSection {
+  max-width: var(--max-full-width);
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--flex-gap-sm);
+  padding: var(--padding-sm);
+}
+
+.filterWrapper {
+  gap: var(--flex-gap-sm);
+  padding-left: var(--padding-xs);
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  height: 40px;
+}
+
+.filterWrapper > button {
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.filterWrapper > button[aria-pressed="true"] {
+  outline: 2px solid var(--text-color-primary);
+  outline-offset: 2px;
+  transform: scale(1.05);
+}
+
+.filterParagraph {
+  font-size: var(--font-size-md);
+  color: var(--text-color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .filterSection {
+    margin-top: 30px;
+    flex-direction: row;
+    align-items: center;
+  }
+  /* 
+  .filterWrapper {
+    width: 90%;
+    align-items: center;
+  } */
+}

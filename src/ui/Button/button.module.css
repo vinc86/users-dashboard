@@ -1,0 +1,75 @@
+.button {
+  border: none;
+  cursor: pointer;
+  color: var(--text-color-white);
+  border-radius: var(--border-radius-md);
+  letter-spacing: var(--letter-spacing-sm);
+  transition: all 0.3s ease;
+}
+
+.main {
+  background-color: var(--color-main);
+}
+
+.main:hover {
+  background-color: var(--color-main-on-hover);
+}
+
+.admin {
+  background-color: var(--badge-color-navy);
+}
+
+.admin:hover {
+  background-color: var(--badge-color-navy-hover);
+}
+
+.editor {
+  background-color: var(--badge-color-teal);
+}
+
+.editor:hover {
+  background-color: var(--badge-color-teal-hover);
+}
+
+.viewer {
+  background-color: var(--badge-color-steel-blue);
+}
+
+.viewer:hover {
+  background-color: var(--badge-color-steel-blue-hover);
+}
+
+.guest {
+  background-color: var(--badge-color-magenta);
+}
+
+.guest:hover {
+  background-color: var(--badge-color-magenta-hover);
+}
+
+.owner,
+.inactive {
+  background-color: var(--badge-color-white);
+  color: var(--text-color-primary);
+}
+
+.owner:hover,
+.inactive:hover {
+  background-color: var(--badge-color-white-hover);
+}
+
+.small {
+  padding: 6px 18px;
+  font-size: var(--font-size-md);
+  border-radius: var(--border-radius-sm);
+}
+
+.medium {
+  padding: 15px 30px;
+  font-size: var(--font-size-lg);
+  letter-spacing: var(--letter-spacing-md);
+}
+
+.large {
+  padding: 16px 32px;
+}

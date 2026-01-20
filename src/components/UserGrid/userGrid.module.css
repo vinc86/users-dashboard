@@ -1,0 +1,14 @@
+.userGrid {
+  display: grid;
+  padding: var(--padding-md);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--flex-gap-md);
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .userGrid {
+    padding: unset;
+    padding-top: var(--padding-lg);
+  }
+}

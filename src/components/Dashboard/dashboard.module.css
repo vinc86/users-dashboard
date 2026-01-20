@@ -1,0 +1,16 @@
+.dashboard {
+  width: 100vw;
+  max-width: var(--max-full-width);
+  display: flex;
+  flex-direction: column;
+  gap: var(--flex-gap-sm);
+}
+
+.separator {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .separator {
+    display: block;
+  }
+}

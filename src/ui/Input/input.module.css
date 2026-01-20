@@ -1,0 +1,16 @@
+.input {
+  padding: var(--padding-sm);
+  letter-spacing: var(--letter-spacing-sm);
+  border-radius: var(--border-radius-xl);
+  border: none;
+  width: 90%;
+  padding-left: var(--padding-lg);
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    border-radius: var(--border-radius-lg);
+    height: 80px;
+    width: 77%;
+  }
+}

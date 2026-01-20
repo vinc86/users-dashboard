@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* == Colors == */
+  --background: #f5f5f5;
+  --background-white: #fff;
+  --background-subdued: #676767;
+  --background-subdued-opaque: #6767679c;
+  --color-main: #fb6232;
+  --color-main-on-hover: #dc4416;
+  --badge-color-navy: #003569;
+  --badge-color-navy-hover: #002547;
+  --badge-color-teal: #279085;
+  --badge-color-teal-hover: #1f6f66;
+  --badge-color-steel-blue: #5993b9;
+  --badge-color-steel-blue-hover: #447599;
+  --badge-color-magenta: #9f009f;
+  --badge-color-magenta-hover: #7a007a;
+  --badge-color-white: #fff;
+  --badge-color-white-hover: #e8e8e8;
+  --text-color-primary: #292929;
+  --text-color-secondary: #63666a;
+  --text-color-white: #fff;
+
+  /* == Typography == */
+  --line-height-md: 170%;
+  --line-height-lg: 100%;
+  --letter-spacing-sm: 1px;
+  --letter-spacing-md: 2px;
+  --font-size-sm: 9px;
+  --font-size-md: 12px;
+  --font-size-lg: 15px;
+  --font-size-xl: 22px;
+
+  /* == Spacing == */
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 30px;
+  --padding-xs: 6px;
+  --padding-sm: 12px;
+  --padding-md: 17px;
+  --padding-lg: 25px;
+  --padding-xl: 30px;
+  --flex-gap-sm: 10px;
+  --flex-gap-md: 15px;
+  --max-full-width: 1050px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color-primary);
+  font-size: 2rem;
+  margin: 0;
+  min-height: 100vh;
+  place-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  overflow-x: hidden;
+}
