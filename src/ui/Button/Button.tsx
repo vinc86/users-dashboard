@@ -1,9 +1,9 @@
 import type { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
-import type { Roles } from "../../types";
+import type { Role } from "../../types";
 import styles from "./button.module.css";
 
 type ButtonSize = "small" | "medium" | "large";
-type Variant = "main" | Roles;
+type Variant = "main" | Role;
 type ButtonProps = {
   children: ReactNode;
   size?: ButtonSize;

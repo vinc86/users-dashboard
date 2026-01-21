@@ -1,23 +1,27 @@
-# Frontend Interview - Website
+# User Dashboard
 
-Hey 👋
-
-This is the base repository for the home test. The repository is created with `vite` and is empty, but contains some packages already installed, in particular:
-
-- `react`
-- `vitest`
+A search application to browse and filter users.
 
 ## Install and run
 
 ```bash
-# Install dependencies
-# This project use `pnpm` as package manager, but you can use also `npm` or `yarn`.
 pnpm install
-
-# And run the project
 pnpm dev
 ```
 
-## Figma file
+App runs at `http://localhost:5173`
 
-The figma file of the home test is available [here](https://www.figma.com/design/ESP3mNtKRj1aI458c08QBb/%F0%9F%92%BB-Website-Home-Test?node-id=0-1&t=tmrCaYq4wADJCHvD-1).
+## Scripts
+
+- `pnpm dev` - Start dev server
+- `pnpm build` - Production build
+- `pnpm test` - Run tests
+- `pnpm check` - Lint with Biome
+
+## Features
+
+- Search users by name
+- Filter by role
+- Responsive layout
+- Modal with user details
+- Loading, error and empty states
