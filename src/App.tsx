@@ -34,6 +34,7 @@ export const App = () => {
     e.preventDefault();
     if (!inputValue) return;
     setSearchQuery(inputValue);
+    setActiveRole(null);
     setIsSearching(true);
     fetchData();
   };
