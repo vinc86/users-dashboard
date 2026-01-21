@@ -1,8 +1,8 @@
 import { render, screen, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import { mockUsers } from "../../mocks";
 import { Dashboard } from "./Dashboard";
-import userEvent from "@testing-library/user-event";
 
 describe("Dashboard", () => {
   const defaultProps = {
