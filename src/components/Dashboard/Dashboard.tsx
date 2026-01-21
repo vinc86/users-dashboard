@@ -42,14 +42,6 @@ export const Dashboard = ({
     );
   }
 
-  if (users.length === 0) {
-    return (
-      <section className={styles.dashboard}>
-        <EmptyState message="No users found" />
-      </section>
-    );
-  }
-
   return (
     <section className={styles.dashboard}>
       <RoleFilter activeRole={activeRole} setActiveRole={setActiveRole} />
