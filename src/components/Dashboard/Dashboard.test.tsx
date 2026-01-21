@@ -1,7 +1,8 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 import { mockUsers } from "../../mocks";
 import { Dashboard } from "./Dashboard";
+import userEvent from "@testing-library/user-event";
 
 describe("Dashboard", () => {
   const defaultProps = {
@@ -27,6 +28,16 @@ describe("Dashboard", () => {
     expect(screen.getByRole("alert")).toBeInTheDocument();
     expect(screen.getByText("Something went wrong")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /retry/i })).toBeInTheDocument();
+  });
+
+  it("should render EmptyState when filter doesn't return results", async () => {
+    const user = userEvent.setup();
+    render(<Dashboard {...defaultProps} />);
+    const viewerButton = screen.getByRole("button", { name: "viewer" });
+    await user.click(viewerButton);
+    waitFor(() => {
+      expect(screen.getByRole("output")).toBeInTheDocument();
+    });
   });
 
   it("should render EmptyState when users array is empty", () => {
